@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: 日记本, ivm4wl">
-    <meta name="description" content="good, patient, strong">
+    <meta name="keywords" content="ivm4wl">
+    <meta name="description" content="要听话, 要真正做到强大专注.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: 日记本 | 天光海岸的一个小家</title>
+    <title>天光海岸的一个小家</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -267,320 +267,467 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = 'ab4a5bdb51e24bad62da6d71218ddc1b795a42fbc726186d12600bf6e8df9784';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/xxx.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                欢迎回家!
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-<script>
-    
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
-    
-    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
-
-</script>
-
-
-    </div>
-</div>
-
-<main class="content">
-
-    
-
-<div id="tags" class="container chip-container">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
     <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%97%A5%E8%AE%B0%E6%9C%AC/">
+                                <span class="chip bg-color">日记本</span>
+                            </a>
+                        
+                            <a href="/tags/ivm4wl/">
+                                <span class="chip bg-color">ivm4wl</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%97%A5%E8%AE%B0%E6%9C%AC/" class="post-category">
+                                日记本
+                            </a>
+                        
+                    </div>
+                    
+                </div>
             </div>
-            <div class="tag-chips">
+
+            <div class="post-info">
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-05-27
+                </div>
                 
-                <a href="/tags/%E6%97%A5%E8%AE%B0%E6%9C%AC/" title="日记本: 7">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="日记本" style="background-color: #F9EBEA;">日记本
-                        <span class="tag-length">7</span>
-                    </span>
-                </a>
+
                 
+
                 
-                <a href="/tags/%E8%8B%B1%E8%AF%AD/" title="英语: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="英语" style="background-color: #F5EEF8;">英语
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
+
                 
+
                 
-                <a href="/tags/%E7%88%B8%E7%88%B8/" title="爸爸: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="爸爸" style="background-color: #D5F5E3;">爸爸
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="碎碎念："><a href="#碎碎念：" class="headerlink" title="碎碎念："></a>碎碎念：</h2><ol>
+<li>20:41 怎样才能够多说话</li>
+<li>20:41 为什么还是放弃了重新把那个作业做一遍</li>
+<li>18:05 从教学楼出来的时候，雨下的比想象中的要大好多。</li>
+<li>18:05 雨滴落在伞上的感觉真好。</li>
+<li>18:06 想被爸爸捏在手心里。</li>
+<li>18:10 雨天的快乐就是恰好穿着一双踩起水花来也不心疼的鞋子。</li>
+<li>要多想爸爸，少想家里的事。</li>
+<li>狗子要多想爸爸，少想甚至完全不去想家里的事，珍惜放假回家前的一切时光和资源。</li>
+<li>要听爸爸的话，要做一只强大坚定的二狗子。</li>
+<li>梦到bbjhzjdqql</li>
+</ol>
+<hr>
+<p><img src="https://picx.zhimg.com/100/v2-4c503dc0dcbd3447e3afbb1213434a8b_r.jpeg"><br><img src="https://picx.zhimg.com/100/v2-7897208cbb26f51a918a9454e06f14f9_r.jpeg"><br><img src="https://pic1.zhimg.com/100/v2-95d60bf7f0db6935c7e5c10829771b90_r.jpeg"></p>
+<h2 id="加油"><a href="#加油" class="headerlink" title="加油"></a>加油</h2><h2 id="日程记录："><a href="#日程记录：" class="headerlink" title="日程记录："></a>日程记录：</h2><p>0:43 带耳塞，拉好床帘，护肤，上闹铃<br>0:47 没睡着<br>1:11 爸爸晚安💤💤💤<br>9:12 早安ﾉ☀，写字，赖床，摸鱼刷知乎，转通知<br>9:40 回妈妈的消息<br>10:10 摘掉耳塞，夹起床帘，闭上眼睛和被子抱抱，早餐<br>10:47 洗衣服，早餐<br>11:14 练字, 发呆想一些事情<br>13:58 晾衣服<br>14:18 护肤，吃维生素，给被子套上被套，出门看到外面的大柳树<br>14:42 取快递(湿巾)，去教学楼，摸鱼，找教室<br>15:08 &#x3D;&#x3D;在教室&#x3D;&#x3D;<br>20:39 总结计划 &#x3D;&#x3D;⭐&#x3D;&#x3D;<br>20:47</p>
+<hr>
+<p><img src="https://pica.zhimg.com/100/v2-81843d204aed1e72f9b2e0fb93bb06c0_r.jpeg"><br><img src="https://pic1.zhimg.com/100/v2-e6635d601e6a8947d4e435cc7b3bdc98_r.jpeg"><br><img src="https://pic1.zhimg.com/100/v2-1240933ae02f012770d1b1b7150909fe_r.jpeg"><br><img src="https://pica.zhimg.com/100/v2-3c057d31400083adabc49d1110653495_r.jpeg"></p>
+
                 
-                
-                <a href="/tags/ivm4wl/" title="ivm4wl: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="ivm4wl" style="background-color: #E8F8F5;">ivm4wl
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">爸爸的乖乖的小狗子</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://withoutfire.top/2023/05/27/2023-05-27-20-31-03/">http://withoutfire.top/2023/05/27/2023-05-27-20-31-03/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">爸爸的乖乖的小狗子</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%97%A5%E8%AE%B0%E6%9C%AC/">
+                                    <span class="chip bg-color">日记本</span>
+                                </a>
+                            
+                                <a href="/tags/ivm4wl/">
+                                    <span class="chip bg-color">ivm4wl</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">给椰香软糖买小蛋糕.</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
     
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本, ivm4wl" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/27/2023-05-27-20-31-03/">
-                        <div class="card-image tag-image">
-                            
-                            <img src="/source/images/xxx.jpg" class="responsive-img" alt="">
-                            
-                            <span class="card-title"></span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/05/27/2023-05-27-20-31-03/">
+                    <div class="card-image">
+                        
+                        <img src="/source/images/xxx.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            要听话, 要真正做到强大专注.
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2023-05-27
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E8%AE%B0%E6%9C%AC/" class="post-category">
-                                日记本
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%97%A5%E8%AE%B0%E6%9C%AC/" class="post-category">
+                                    日记本
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
                 </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/19/2023-05-19-23-15-55/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="2023-05-19_18-10-32">
-                            
-                            <span class="card-title">2023-05-19_18-10-32</span>
-                        </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%97%A5%E8%AE%B0%E6%9C%AC/">
+                        <span class="chip bg-color">日记本</span>
                     </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                天光海岸
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/18/2023-05-18-13-16-20/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="2023-05-18_18-10-32">
-                            
-                            <span class="card-title">2023-05-18_18-10-32</span>
-                        </div>
+                    
+                    <a href="/tags/ivm4wl/">
+                        <span class="chip bg-color">ivm4wl</span>
                     </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                天光海岸
-                                
-                            </span>
-                        </div>
-                    </div>
+                    
                 </div>
+                
             </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/17/2023-05-17-0-52-43/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="2023-05-17_18-10-32">
-                            
-                            <span class="card-title">2023-05-17_18-10-32</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                天光海岸
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/16/2023-05-27-12-35-41/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="2023-05-27_19-32-56">
-                            
-                            <span class="card-title">2023-05-27_19-32-56</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                天光海岸
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/16/2023-05-16-02-22-49/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="2023-05-16_18-10-32">
-                            
-                            <span class="card-title">2023-05-16_18-10-32</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                天光海岸
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="日记本" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2023/05/15/2023-05-15-02-57-34/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="2023-05-15_22-16-38">
-                            
-                            <span class="card-title">2023-05-15_22-16-38</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                天光海岸
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
-    </article>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/05/27/accurate-specific-precise/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            天光海岸
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
 </main>
 
 
