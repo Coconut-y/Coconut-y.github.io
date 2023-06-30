@@ -1,0 +1,1199 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ivm4wl">
+    <meta name="description" content="请识别下列每行内容所属的领域, 并将它们按领域分类, 然后将可以被归纳为同一领域的几行排列在一起, 输出排序后的结果:
+100克食物到底有多少？相当于什东西么的重量？ pr怎么改变图片大小，怎么弄那个图片的效果啊? 你最喜欢金庸笔下的哪个角">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>这里是我小小的家</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">这里是我小小的家</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">这里是我小小的家</div>
+        <div class="logo-desc">
+            
+            good, patient, strong
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-04-05
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-05
+                </div>
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>请识别下列每行内容所属的领域, 并将它们按领域分类, 然后将可以被归纳为同一领域的几行排列在一起, 输出排序后的结果:</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/333974629/answer/2960921812">100克食物到底有多少？相当于什东西么的重量？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/385150225/answer/2954763538">pr怎么改变图片大小，怎么弄那个图片的效果啊? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/265322722/answer/2945348475">你最喜欢金庸笔下的哪个角色？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/583550448/answer/2945441328">ChatGPT深度学习后和娃娃集成在一起能替代女朋友吗? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/573083584/answer/2943661612">为什么各种语言里“妈妈”的叫法都差不多？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/425346346/answer/2943563724">看到一本特别喜欢的书以后，你会是什么样心情？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/359948645/answer/2931197325">综合素质怎么过的? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/298839081/answer/2929556850">教师劳动的特点有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513364026/answer/2929525966">教材编写需要遵循哪些原则？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372483499/answer/2929516101">臧息相辅是什么原则？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/530617891/answer/2929248847">现在的年轻人都有些什么信仰? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34987305/answer/2929194328">如何管理好一个班集体? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/284178614/answer/2929190471">怎样管理好一个新组建的班集体？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/445737560/answer/2929172633">影响人格形成及发展的因素有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/405977923/answer/2929169061">学习策略和认知策略哪个范围更大？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372006584/answer/2929151334">影响问题解决的因素是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/355803639/answer/2929004140">马斯洛需求层次论如何应用? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/58859607/answer/2928984592">什么是元认知策略？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/25669202/answer/2928966089">我想把人类所有的情绪进行分类，但是不知道该从那一点切入？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/487797310/answer/2928928316">教学目标怎么写啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37865362/answer/2928879355">求大神解释，人格，个性，气质，性格，有什么区别。? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/503165390/answer/2928870672">在教育不同气质类型的孩子时，我们应该如何因材施教？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/508224098/answer/2928865994">多血质和胆汁质感觉都是暴躁的，应该怎么区分呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/384790607/answer/2928859592">学习动机理论都有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/506566510/answer/2928852636">怎么区分直接或间接近景性动机? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/41888289/answer/2928841013">关于班杜拉的各个方面？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/534226000/answer/2928832891">想要了解学习马克思主义，推荐看哪些书? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/303682297/answer/2928829124">有哪些比较著名的教育家，以及有没有推荐的他们的著作？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27469380/answer/2928809235">建构主义学习理论和新课改的关系? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/385103165/answer/2928802906">教师考编简述加涅信息加工理论？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34987305/answer/2929194328">如何管理好一个班集体? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/284178614/answer/2929190471">怎样管理好一个新组建的班集体？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/445737560/answer/2929172633">影响人格形成及发展的因素有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/405977923/answer/2929169061">学习策略和认知策略哪个范围更大？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372006584/answer/2929151334">影响问题解决的因素是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/355803639/answer/2929004140">马斯洛需求层次论如何应用? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/58859607/answer/2928984592">什么是元认知策略？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/25669202/answer/2928966089">我想把人类所有的情绪进行分类，但是不知道该从那一点切入？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/487797310/answer/2928928316">教学目标怎么写啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37865362/answer/2928879355">求大神解释，人格，个性，气质，性格，有什么区别。? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/503165390/answer/2928870672">在教育不同气质类型的孩子时，我们应该如何因材施教？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/508224098/answer/2928865994">多血质和胆汁质感觉都是暴躁的，应该怎么区分呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/384790607/answer/2928859592">学习动机理论都有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/506566510/answer/2928852636">怎么区分直接或间接近景性动机? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/41888289/answer/2928841013">关于班杜拉的各个方面？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/534226000/answer/2928832891">想要了解学习马克思主义，推荐看哪些书? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/303682297/answer/2928829124">有哪些比较著名的教育家，以及有没有推荐的他们的著作？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27469380/answer/2928809235">建构主义学习理论和新课改的关系? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/385103165/answer/2928802906">教师考编简述加涅信息加工理论？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/494211549/answer/2928789383">有意义学习的实质与条件是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/498399229/answer/2928780082">论述感觉记忆短时记忆与长时记忆的区别和联系？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/40776656/answer/2928766377">首因效应，刻板印象，晕轮效应的区别？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/564125150/answer/2928762857">什么是近因效应？和首因效应的区别是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/347106117/answer/2928754423">感觉、知觉和认知之间有什么区别，有什么例子？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/40018582/answer/2928747636">什么是知觉？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372976021/answer/2928744263">知觉的基本特性是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28704797/answer/2928738274">联觉是什么？能否用一段话或者一幅画列举? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/432145176/answer/2928710346">大一弱鸡想问一下下为什么暗适应感受性提高? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/381757536/answer/2928704851">做题时问到明适应是什么意思，想问问大家知道吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/264959776/answer/2928698108">绝对感受性与绝对阈限，差别感受性与差别阈限之间存在哪些关系？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/321293742/answer/2928696130">如何能理解绝对感受性和绝对阈限？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372006457/answer/2928686575">感受性和感觉阈限的关系是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/382340777/answer/2928681879">注意的品质怎么区分？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/424985186/answer/2928670686">有意后注意和无意注意怎么区分啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524439937/answer/2928665592">到底什么是认知？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/378253825/answer/2928658672">在教育基础知识中，德育原则都有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/461741166/answer/2928649435">如何高效管理班级？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20789554/answer/2928638815">怎样进行良好的情绪管理？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/60145560/answer/2928631514">我国当前的教育价值取向是怎么样的呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/380945097/answer/2928622024">皮亚杰认知发展阶段理论，前运算阶段的都有哪些特点？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/500211819/answer/2928616333">第十九题难道不是启发性吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/382297750/answer/2928604203">教育只有正向功能吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/504135973/answer/2928596637">中小学常用的教学原则有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/493535609/answer/2928575098">? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/320368270/answer/2928453573">大学生如何提高自习效率？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/433905374/answer/2928356434">流体智力和晶体智力的区别在哪儿？同时他们分别与工作记忆和长时记忆有啥区别啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/313140412/answer/2928350571">前摄抑制和倒摄抑制怎么区别? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/300736963/answer/2927597991">考教师资格证我需要带什么工具？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/519996452/answer/2926376658">有哪些适合三八妇女节发的文案？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/587336654/answer/2923654163">你能把孤独写到什么程度？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/543547093/answer/2921850793">牺牲你一个人去救一千人你愿意吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37751755/answer/2919548267">当你在一款浏览器中搜索另一款浏览器下载的时候，那款浏览器是什么心情？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/35159531/answer/2919428090">你见过哪些神断句？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/585224224/answer/2917648456">教师岗位的人业余都爱参与什么运动？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/387406278/answer/2916811762">个体身心发展的规律有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/379099400/answer/2916536215">学习策略怎么区分？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20815595/answer/2916488014">新学期开始了，大家都有什么计划啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/586515024/answer/2915334936">如何看待昆明一小学拾金不昧，民警颁发奖状后还奖励其「30 本练习册」？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22994780/answer/2913305552">演绎推理和归纳推理有什么区别？能举个例子吗？上述二者各自有严肃的公认的定义吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/271294847/answer/2912611386">算法和程序之间有什么关系？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/564117507/answer/2907730857">如何培养孩子解决问题的能力？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/567729197/answer/2907505643">教师备课的基本要求是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/264437387/answer/2906849383">简述基础教育课程改革的具体目标？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/379621554/answer/2906645796">B站一键三连中包含收藏是否合理？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/442493745/answer/2904568611">多余的饺子馅怎么处理？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/383696601/answer/2901333834">行为主义学习理论都有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/411904802/answer/2897679655">能不能告诉我一句你最信奉的人生哲理? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/573459610/answer/2891954895">软件的生命周期是什么样的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/430819380/answer/2891947373">软件开发方法主要有哪些呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/497707300/answer/2891896342">怎样理解全面发展教育及其构成关系？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/477188849/answer/2889507824">正则表达式为什么不直接构造DFA，反而要先构造NFA？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/404442963/answer/2881892191">整理笔记（生活笔记、学习笔记、工作笔记等）用哪个笔记软件好？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/520911561/answer/2881825109">如果想快速通过一门考试，是先做题后听课，还是先听课后做题? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/338937392/answer/2881119837">想问一下考教资的人，文化素养那章有很多很碎的知识点，该怎么记呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21486706/answer/2880958191">程序的编译与解释有什么区别？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28032873/answer/2879466920">怎么快速判断一个文法是不是有二义性？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/403932184/answer/2876626539">期末考试该怎么速成数电呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37387673/answer/2875760768">除了404你还知道哪些页面错误？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/316731778/answer/2872982129">“属加种差”之外，还有哪些定义法？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/385230779/answer/2868951399">皮肤是免疫系统的第一道防线，那么《进击的巨人》里，没有皮肤的巨人会不会免疫力很差? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/303004464/answer/2868685525">什么是文法？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20131215/answer/2865828917">怎么理解编程语言中的终结符和非终结符？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21011353/answer/2864536812">思维类型分几种？你属于哪种类型？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/391537394/answer/2864206243">为什么2型文法比1型文法限制少了，但是却是1型文法的子集？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26452917/answer/2863973389">编译程序的工作过程是怎么样的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/361658139/answer/2862771661">软件开发模型分别适应那些项目？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/56619932/answer/2862720209">请问软件过程模型中的rup与瀑布模型有哪些区别联系？与原型模型呢? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/340460536/answer/2860959635">有没有好看的财神爷的壁纸？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37288001/answer/2853636841">冬天怎么才能让多头发快干，除了用吹风机？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/565033669/answer/2845486618">小年到了，你想给新一年的生活加一勺什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/578534846/answer/2845466100">为什么大学总是会怀念高中生活？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28192607/answer/2831104531">有没有各种食物营养成分的网站？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/383995392/answer/2818685388">上知乎的穿越者可以透露一点未来的事吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/67716920/answer/2818601474">感冒之后鼻子里面鼻腔经常一吸气就疼的难受，请问是怎么回事？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/572710148/answer/2815674052">目前已经阳了的人都有什么感触？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/442897763/answer/2812907444">你最喜欢知乎的哪些博主？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/55541484/answer/2803825374">运动会降低食欲吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24858914/answer/2803823840">为什么一周骤降了运动量，食欲反而旺盛很多？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21806125/answer/2800870441">电动自行车骑在路上没电了怎么办？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/568367651/answer/2800645846">2022 年 12 月 13 日是第九个南京大屠杀死难者国家公祭日，我们为何需要铭记这段历史？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/316135524/answer/2799360832">b站外挂字幕(cc字幕)如何下载？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/570322748/answer/2798081448">为什么所有的宠物都不喜欢放被子里睡觉? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/374229232/answer/2794799385">联想拯救者笔记本如何打开键盘灯光? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/557447740/answer/2782678809">GUID 到底是什么？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/569627060/answer/2782643507">恐龙如果没有灭绝，现在有没有可能成为我们的宠物？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/64760835/answer/2782564586">请问github上这些项目结构目录是如何生成的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/395019928/answer/2782483289">HashMap 和 Hashtable 有什么区别？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/568248345/answer/2780534513">为什么学编程都建议不要用拼音命名？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/505676384/answer/2780257379">pdb是什么文件格式? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/318492333/answer/2779610942">什么是端口？到底是做什么的呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/351515800/answer/2765443443">自从参加辩论后深刻的领悟到什么道理？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/59005741/answer/2763850129">谁有中文停用词表 stopwords_ch</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/316222983/answer/2762690480">有哪些特别万能的能引用到作文里的名言句子？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34117194/answer/2760906038">为什么做卷腹都会头晕脑胀? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29115356/answer/2759867482">软件工程-如何进行可行性分析？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/535676287/answer/2759863544">软件工程的研究领域包括哪些内容？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21152442/answer/2756957451">《哈姆莱特》中有哪些经典的语句？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/268902787/answer/2749006928">二维码有破损，怎么还可以扫描出网址？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/315307535/answer/2745855605">Producer 与productor</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/448238505/answer/2731735669">怎么理解混合积的几何意义？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/395972816/answer/2731711414">已知空间内两点怎么求直线方程呀？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/499145912/answer/2731698745">立体几何里直线与平面所成夹角余弦值是正还是负？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/539921324/answer/2731643901">请问这道题可以用切比雪夫不等式吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/53318348/answer/2731469512">高数开始学极限了，不知道计算的技巧和方法。？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/284638492/answer/2731439645">贝叶斯公式小问？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20448179/answer/2731315127">为什么很多女人都说不喜欢肌肉男？她们真的是这样想的吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/477985260/answer/2726891665">如果你有机会去旅游，你最想去哪座城市？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/277490016/answer/2705977567">在我国吸毒后驾车的行为能否以醉酒驾车论处？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23991857/answer/2703921018">新手写教案，如何把握重点和难点？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/547674994/answer/2703729101">你养宠物的初衷是因为感到孤独吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/352676196/answer/2702556990">教师专业发展的途径和方法都有那些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27429853/answer/2670658647">如何运用微课来翻转课堂？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20044371/answer/2663359712">「知识」是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27764295/answer/2600012341">什么是教育？教育的目的是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/357265206/answer/2599909545">什么叫行政复议? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/310907448/answer/2595465284">老把面包烤糊怎么回事? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/413153952/answer/2572271970">喷了过期的西瓜霜，我会有事吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/451476991/answer/2569337529">gflops是啥？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19904448/answer/2556833555">信息是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/349820390/answer/2531214688">你煮方便面是先放料还是先放面？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/324392663/answer/2480798345">URL是什么意思？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37623310/answer/2471238504">VS Code有哪些常用的快捷键？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/380570863/answer/2467572713">哪些好物既提升效率又实用堪称学习神器？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/530419015/answer/2467046585">如何评价游戏《居家隔离模拟器》？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37900172/answer/2456512213">什么是说课，怎么说课，能举个例子吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/315959817/answer/2451262015">什么时候可以真正的开心起来？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23482270/answer/2450997491">如何在知乎的编辑器中使用嵌套列表? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/369379101/answer/2450163850">教师资格证考试写教案中教学目标咋写？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19972516/answer/2449215168">文化是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/349871488/answer/2448523659">URL是什么? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/267240292/answer/2444883028">答题卡读取答案时真的只能读取 2b</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/527715631/answer/2441893812">4 月 13 日山西太原新增 7 例阳性，目前当地疫情情况如何？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/325835935/answer/2437276651">课件ppt怎么做得，那么多内容？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/435079249/answer/2434279540">子网掩码255.255.255.0代表什么意义？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/273889143/answer/2432598100">知乎文章编辑怎么加音频？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23896161/answer/2432524641">什么是大数据？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/483702679/answer/2432511558">什么是数据？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/365913788/answer/2432235165">你有哪些对你有特殊意义的头像？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/58831167/answer/2431889837">当你在听Passenger 的【let her go】的时候，你在想什么？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/417559017/answer/2431377645">数据库中关系代数与关系运算的区别是什么? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/342101488/answer/2431359826">仲裁是什么意思？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/368762408/answer/2429412397">对于这次疫情，你有什么感想？懂得了什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20419052/answer/2428965916">知乎有哪些快捷键？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/294815552/answer/2426491098">什么是ip地址？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22608645/answer/2425072456">如何能从不断的自我否定与自我怀疑中走出来？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/525817678/answer/2424626404">当你在听Passenger 的【let her go】的时候，你在想什么？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22459878/answer/2423213906">ddl的全称是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/319661756/answer/2423009939">什么叫概念？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/424565512/answer/2422842898">关于SQL语句的特点，请问大佬这是什么意思？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/375112548/answer/2422835331">联想Fn+Q</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/522294053/answer/2422832276">python&#x2F;&#x2F;(整除)10&#x2F;&#x2F;4&#x3D;2 %，取余10%7&#x3D;3 10%-7&#x3D;-4这整除和取余是咋算的?</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/403507959/answer/2422370845">现在的年轻人出门为什么都喜欢背个双肩包？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/279571457/answer/2420106531">vmware装的ubuntu 18.04,后安装vm tools复制粘贴失效，为什么？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20411440/answer/2418432828">什么是结构化思维？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28174201/answer/2418408592">清明节的由来? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23374078/answer/2417856496">Unicode 和 UTF-8 有什么区别？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524673861/answer/2416256084">怎么看待好朋友刚刚去世立马删除她的微信? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/298216367/answer/2413783293">关系型数据库的基本关系操作是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52498041/answer/2413433733">我们离开了手机的焦虑感本质到底是什么呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/483990243/answer/2413370638">计算机产生死锁的必要条件都有什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524084761/answer/2413311114">我要怎么把最大的这个结果输出来呀？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524379942/answer/2411998348">怎么用最基础Python解答？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524407452/answer/2411997837">不会做这样的题目怎么做？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513355488/answer/2411745917">Python 中想要将字符串大写，可以用什么函数？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524000186/answer/2411745523">救命！有大佬会python吗？！！? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/407809571/answer/2409421779">在不让用大功率电器的寝室里怎样把生鸡蛋变熟? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/360432231/answer/2409320472">中国目前为止有没有建立沉默权制度？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/460057597/answer/2403827532">古诗《登飞来峰》最后一句是自缘身在最高层还是只缘身在最高层？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/375768355/answer/2403600677">王安石的《登飞来峰》第一句是飞来上千寻塔，还是飞来峰上千寻塔。？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38007153/answer/2402950858">线程的状态是怎么进行划分的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/322175199/answer/2402894409">一看就很贵气的女孩子是什么样子的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/311610140/answer/2402807046">康德说过“敬畏头顶的星空，但对心中的道德不以为然”这样的话吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/522407658/answer/2402422419">上了大学后还怀念高中，是因为在大学混的不好吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513165694/answer/2402248033">你分得清吗？是好奇 是新鲜感</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/60991345/answer/2401803720">怎么看待大学c语言，java等笔试考手写代码？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/35404532/answer/2401769016">大学宿舍上床下桌，桌子与墙壁有条缝？怎么才能把它堵上？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/523198321/answer/2400237125">各位大佬，这个为什么会错呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/53099102/answer/2399348627">哲学家的一天是怎么过的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27651758/answer/2398932432">人生该不该走弯路，怎么看待在人生路上犯错这件事，人生如何止损？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/429527566/answer/2395115218">请问入耳式耳塞可以和蜡丸耳塞叠用吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/522133945/answer/2394389466">有什么事情是你一想起就能内心充满幸福感的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/520755344/answer/2389847692">这上面的话是不是有些矛盾? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/344925232/answer/2389401388">活下去的动力是什么啊，我觉得我快受不了了？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/379849079/answer/2388808974">什么是临界资源，临界区？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/521422260/answer/2388371407">如何评价「青春才几年，疫情占三年」这句话? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/32010071/answer/2379180778">斯金纳操作条件作用学习理论中“泛化”和“分化”的区别，最好是有例子? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/493444322/answer/2379084853">有什么增加宿舍幸福感的好物？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/520531726/answer/2378550286">人大代表建议「将高中生 22 点就寝写入未成年人保护法」，这在实行过程中或将遇到哪些困难？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38369521/answer/2374334493">如何给自己各种帐号编一个安全又不会忘记的密码？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/404603176/answer/2365139142">民诉上的举证责任和证明责任有什么关系吗？是什么意思？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24260535/answer/2364198042">在大学辅修／双学位有怎样的体验？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19660443/answer/2364183952">我国民事调解的适用范围是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/515458993/answer/2340196351">在座各位手机用户都是如何编辑公式的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/507401854/answer/2335047851">第一个喜欢的明星是谁? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52499791/answer/2333964315">如何评价《秦时明月》的田言？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/310015163/answer/2333565889">如何评价朔城区一中？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/510199297/answer/2328860175">聪明的人类如何解决IPV4地址不够用的问题? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513334438/answer/2328848253">计算机怎么输入以lg为底3真数为4？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/367172970/answer/2327895303">sin105°等于多少？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/328387356/answer/2327722915">如何用正弦定理证明余弦定理？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/463899925/answer/2325054852">怎么用坐标表示三角形五心? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/512940186/answer/2322146438">1 月 23 日山西朔州市朔城区发生 3.0 级地震，目前情况如何？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/512477160/answer/2321614979">不讲原则算不算一种原则,</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/509771647/answer/2321096916">年味愈渐浓烈，你还记得小时候你们家乡有哪些特别的过年习俗吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/311284535/answer/2320380954">有哪些值得珍藏的励志句子？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23556902/answer/2319473266">知乎吉祥物刘看山正面长什么样？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/486785611/answer/2309308455">如何轻松将  mathtype</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/439278190/answer/2304742215">大学学习总结怎么写？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/53183111/answer/2300751205">计算机导论如何学习？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/364258294/answer/2296250273">大学生能被期末考试逼到什么程度? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31298277/answer/2289235245">知乎上的公式是怎么打出来的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/453397320/answer/2289204277">涉外民事关系第31条有关法定继承中的冲突规范的范围、类型、连接点、系属是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/507387784/answer/2287049000">如何用约束条件化简逻辑函数式？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/382489552/answer/2286992813">FOB、CFR和CIF术语的相同点和区别有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/395876967/answer/2286908367">这道矩估计量和似然估计量的题如何做？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/66132164/answer/2286431204">社会地位低的人、情绪不稳定的人</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37395595/answer/2285439468">逻辑函数Y(abcd</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/401532369/answer/2285409405">数电驱动方程怎么写? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26439201/answer/2285277295">汽车是动产还是不动产？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/402914822/answer/2284807917">写出RS.、JK触发器的特性方程，为什么RS触发器有约束方程，而JK触发器没有？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/65621249/answer/2283177554">卡诺图的问题？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/507806745/answer/2282205030">7.3乘9.9，如何简便运算？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/507807321/answer/2282173688">为什么大X与大Y的关系可以直接写成小x与小y的关系? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/67954453/answer/2282012262">向下取整+1和向上取整有什么区别？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/62030859/answer/2281951605">KMP算法中的next数组到底怎么算出的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/60748750/answer/2281660976">用原码一位乘法计算X&#x3D;0</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/329891991/answer/2281286275">如何用或非门设计一个四变量多数表决电路？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/506900806/answer/2280165813">投一次骰子，出现的点数，A事件为“偶数”，B事件为“3，6”，这两个事件是相互独立的吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/354108925/answer/2279435341">在司法实践中，藐视法庭会有什么后果？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/59828558/answer/2279412234">劳动仲裁中下列关于劳动者申请先予执行的表述，正确的有（        ）？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/404968382/answer/2277647240">存储器扩展原理是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/460080358/answer/2277630833">字位同时扩展四倍用什么译码器？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/496756932/answer/2266210229">长沙8岁小学生疑失踪半天，最后发现竟是因没带手纸一直躲在厕所，对孩子的安全教育需要哪些方式方法？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/504940093/answer/2265855235">我想知道大家对于老师对小学生区别对待的做法？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/502466768/answer/2265829419">2021 你到过哪些地方令你觉得人间值得？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/503474409/answer/2265824011">如何看待某211大学计算机本科作业是手写代码？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/277132148/answer/2265801927">有哪些「懂的人自然懂」的数字？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/301143786/answer/2251677268">请问哪一步，错了逻辑函数化简？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/265672317/answer/2251217059">cpu如何区分指令和数据地址的? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/423161769/answer/2251202349">二进制10.1×110</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/314141859/answer/2250503938">存储器中MAR,MDR和RAM</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/374243756/answer/2246660778">通常说的主机是什么? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/54691054/answer/2246650112">冯·诺依曼计算机的主要特点? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/441226853/answer/2244597115">让你辅修双学位的动机是什么呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23387667/answer/2237780934">如何才能做到爱自己？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/41591616/answer/2237555091">写出逻辑函数式？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/379470769/answer/2237376873">数字电路中逻辑函数最小项为什叫最小？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/27128222/answer/2237238926">如何用JAVA做一个简单的计算器？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31850351/answer/2236013832">哪一刻你突然觉得自己老了？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/357299880/answer/2235946957">数字电子技术基础中，SR触发器的触发方式是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/354592441/answer/2235897576">RS触发器与SR触发器的区别是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/338073957/answer/2234285123">555定时器构成的多谐振荡器的占空比怎么求？有固定的求发吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/379478413/answer/2208643624">如何每天只睡6小时，还保持一整天都精力充沛？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/305041090/answer/2207625057">IPv4和IPv6到底有啥区别，那个好那个不好呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/318900808/answer/2184251211">为什么门锁有钥匙却打不开？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/354651282/answer/2103656468">植物大战僵尸里培根有什么用? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/36875538/answer/2077520666">你的人生愿望清单是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26105830/answer/2074332438">爱情和婚姻的区别是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/338120601/answer/2017247038">我有一份php代码，应该装什么软件运行？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/472392343/answer/2009667439">用什么方法可以把逻辑函数的与或式化成与非-与非的形式？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/314270796/answer/1904198125">有哪些可爱的符号？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/460948654/answer/1901211702">能结合个人实际，说说体育锻炼对你的身心健康起到了哪些作用吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19966576/answer/1726053339">有哪些不落俗套的新年祝福语？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/267157507/answer/1662323765">如何解释基尔霍夫电压定律和基尔霍夫电流定律？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/346936019/answer/1627041118">二次型通过不同的方法得到的标准型是否唯一? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/420532926/answer/1509612968">QQ出了戳一戳拍一拍有没有什么好的文案？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/423833712/answer/1503567575">如何看待美国总统特朗普发文称，他和妻子新冠病毒检测呈阳性？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/25252525/answer/1501787377">如何高逼格的祝大家中秋快乐？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/315612757/answer/2929668390">大学线性代数听不懂，有什么自学的方法（初学者）？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/376501396/answer/2185866839">支撑着你活下去的是什么力量？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31850351/answer/1964582940">哪一刻你突然觉得自己老了？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22394878/answer/1946591116">大家编写程序时最喜欢的是什么字体？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/361490441/answer/1938581101">反相比例放大器工作原理是怎样的，如何推导输出电压公式? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34219998/answer/1938157467">DOM 是什么？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/452690423/answer/1938021322">奴隶未必有奴性?此话怎讲</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/310838983/answer/1937610579">在自然推理系统中，构造下面推理的证明：前提：p→(q→r</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/47615311/answer/1937572978">写出公式(p→r</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/437604828/answer/1937100873">主析取范式怎么求? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/378221949/answer/1937065546">用等值演算判断公式类型:(</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/462816175/answer/1928287156">不是哈密顿图但却是欧拉图的无向图有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20963807/answer/2957775672">ipad 反光大家是怎么解决的？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/288302369/answer/2919314823">麻烦问问各位大佬，怎么在ipad上把字写好看？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/62150469/answer/2769965218">怎样判断INTP喜欢一个人？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/335662288/answer/2754041956">INTP的最佳伴侣是哪种类型？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/518505668/answer/2366982916">能多睡一小时，但是要骑自行车一小时上班；或者早起一小时，但要坐两小时公交上班。INTP会怎么选？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/357147669/answer/2266902499">为什么INTP、INTJ如此稀少？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/580863499/answer/2893403824">各MBTI会对一颗橘子 掉在地上，会如何扩写？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/550796579/answer/2806427350">想用大家写的文字判一下MBTI类型？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/459248603/answer/2813005423">大家为什么喜欢INFP？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52935929/answer/2835365267">可以使用markdown文件中链接打开本地文件吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/512553148/answer/2321598491">看了百年孤独之后还能吃的下猪尾巴吗? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19759594/answer/2318148477">怎么梳理《百年孤独》里的人物关系？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/330641975/answer/2311901141">Sublime 显示没package</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/289632274/answer/2207602143">sublime的有哪些使用技巧？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/585580697/answer/2911279353">像刘看山这种肚子大、胳膊腿却细的身材，怎么健身改善一下？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/572126270/answer/2801308020">小学生10岁刚健身卧推1吨做组是什么水平？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/479365967/answer/2780691527">为什么动物几乎不锻炼肌肉还那么发达，人却要不断健身才可以？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/51294006/answer/2768669928">你在健身时遇到过的最尴尬的事是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/280064408/answer/2736813026">喜欢健身的你当初是因为什么开始健身的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23790050/answer/2707432975">有哪些健身房必备的打鸡血神曲？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26435044/answer/2801275526">如何理解经济学中的边际概念和弹性概念？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/531251057/answer/2799168788">经济学十大原理是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/427898196/answer/2798938313">经济学是什么呀|･ω･｀</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372815859/answer/2798887816">《经济学原理》里的十大原理是什么? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/332526329/answer/2877468780">如何快速复习经济法以应对期末考试？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/47700555/answer/2284986578">请问如何在两天之内自学完国际经济法？能够应付司法考试的那种…… </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/587886046/answer/2925064035">政协委员建议将「编程」上升为中小学主要学科课程，并列入「中高考升学考试体系」，该建议是否具有可行性？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/544070101/answer/2588271077">18 岁少年高考 632 分不会用电脑，使用电脑不是中学生必备技能吗？省重点高中不开计算机课程吗？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/505666849/answer/2275631963">假如一个班的人合作完成高考，能够获得高考状元吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/298693554/answer/1949127467">五年高考三年模拟适合高一新生吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/463824902/answer/1929972716">如何评价 2021 年湖南高考物理卷试题？有哪些变化？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/463595895/answer/1928940475">如何评价 2021 年各卷高考理综题？哪科最难？有哪些变化？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/463703633/answer/1927899927">如何看待 2021 年高考全国乙卷数学？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/382358481/answer/2266759178">海商法航次租船合同、光船租赁合同、定期租船合同的相同与不同是什么呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/425462936/answer/2388744152">法律中的应然与实然是什么意思呐? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/57580614/answer/2285213076">如何查阅外国法律法规？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/375227695/answer/2285184837">什么情况下的法律规避不是一种无效的行为？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/39006655/answer/2138858118">法学院学生在考试时创造过哪些法律？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23233046/answer/2284831122">会发生国际重复征税？ 来源地税收管辖权和居民收入管辖权</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/301653238/answer/2293920953">合同纠纷如何确认管辖法院？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/39188126/answer/2278025889">为什么法院大多不愿受理诉前财产保全? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/475031438/answer/2277326438">法院的调解程序是怎样的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23204480/answer/2599899911">行政复议与行政诉讼的区别？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/389821858/answer/2364197112">妨碍民事诉讼的行为有哪些? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/47693241/answer/2363965238">民事诉讼法具有哪些法律特征？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/376310150/answer/2293919437">诉讼要件和起诉条件有何区别？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/506305956/answer/2286145181">民事诉讼的目的是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/401498911/answer/2245217935">在诉讼中，诉讼代理人可以代替原告去法庭打官司，而原告不去么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/60154190/answer/2899992075">大一法学生，对于刑法总论期末应该怎么复习迎考？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/47407806/answer/2848231472">刑法中的类推解释和当然解释如何区分？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28228434/answer/2327809638">在刑法上，教唆帮助他人自杀及相约自杀的行为看法? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/380126106/answer/2364207920">最高人民法院审理的一审刑事案件有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20696510/answer/2879734523">有哪些适合程序员使用的头像？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/561576104/answer/2787609084">为什么很多程序员（也可能不是）会自愿发很多关于编程的知识帖或者教程帖？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/564514321/answer/2783231363">如何看待程序员抄代码还拿着高薪这一现象？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21400402/answer/2413618425">为什么程序员无论到哪儿都喜欢背电脑包，哪怕里面没有装电脑？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/562136160/answer/2845107148">山西省公费师范生是省编还是市编? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513475038/answer/2328829950">如果已经报考了公费师范生，但是分数达不到，还可以考那所学校吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/510224235/answer/2328826696">部属公费师范生和中上211计算机选哪个？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513539832/answer/2328824946">公费师范生，没有考研和就业压力，但也因此，我觉得我好像没有了同龄人的那种大学生的劲头，该怎么办？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/508841857/answer/2304960626">你怎么看公费师范生恋爱？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/322400420/answer/2252241038">你们有谁知道公费师范生有啥子坏处吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/319632566/answer/2413153817">读师范专业是一种怎样的体验? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/515676055/answer/2394370790">免费师范生真的很香吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513063123/answer/2328854242">2022届专科师范生可以免试教资吗? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/326617549/answer/2269704271">如何评价山西师范大学的计算机科学与技术专业？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/401645451/answer/1507520298">在山西师范大学就读是什么体验？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19553435/answer/2964879448">吃寿司的时候有什么规矩？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/32298778/answer/2864384205">蘑菇要煮多久才熟 才可以吃？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/439914484/answer/2830726413">为什么现在网上会流行各种方便面的不方便吃法？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/479146660/answer/2563496864">你吃过哪些奇葩的饺子馅？味道如何？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/356494233/answer/1947444435">二重积分中值定理怎么证明？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/281891546/answer/1945607416">二重积分如何区分X型Y型啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/441647108/answer/2265797702">考试砸了回到家，母亲打我的概率是 1</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/345957440/answer/2241898428">10件产品中含有4件次品，从中任取两件，已知其中有一件是次品，求另一件也是次品的概率? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/427928195/answer/2240313157">请问Z&#x3D;X+Y的概率密度函数怎么求?</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/327121614/answer/2239336322">请教大家一个问题，请问泊松分布的期望值怎么计算？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/354825596/answer/2239109174">指数分布的分布函数是怎么得到的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/438321228/answer/2731690077">这个概率密度怎么求解? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/434087400/answer/2295151527">有没有概率论数理统计笔记资料分享？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21418108/answer/2239245517">如何理解概率论中的独立同分布？请分别解释独立、同分布及独立同分布。 </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/390658656/answer/2282031861">二叉树的性质怎么记? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/381461109/answer/2812590421">win10自带的电影与电视有倍速播放功能吗，如果没法解决有好的视频播放器推荐吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/33870165/answer/2886607949">每天对着电脑十个小时的工作和学习，怎么保护眼睛呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23585428/answer/2867254308">为什么很多人觉得计算机专业的会修电脑？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/543582935/answer/2779654371">电脑打开命令窗口后，输入“netstat -an”命令,回车后出现下图，请教知乎大神是什么意思呀？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/545016558/answer/2751598979">电脑新建文件夹的快捷键是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/313399329/answer/2408686643">笔记本电脑触摸板没反应，是怎么回事? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/423522097/answer/1500585620">如何看待清华大学一同学在骑车时用笔记本电脑？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/439949994/answer/2881447349">编译原理中，某个语言的文法是如何写出来的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/68438097/answer/2881405794">编译原理 文法的开始符号是否必须唯一？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/529769611/answer/2879626360">编译原理 为什么以下文法是二义的？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31065265/answer/2879003468">编译原理词法分析，语法分析，语义分析能检测出什么错误？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21996009/answer/2868487053">编译原理是不是计算机基础课程中最难的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/57555294/answer/2865878646">编译原理中2型文法与3型文法的区别？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31295168/answer/2864603879">有哪些比较好的关于编译原理 ，操作系统的网络公开课？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/353985468/answer/2731517827">数学的核心素养是哪些呢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/31345791/answer/2731400470">教师在教学中体现数学文化的途径有哪些？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/494522189/answer/2704099724">教资高中数学课程设计咋准备? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/503975864/answer/2703928796">学习高中数学有哪些比较好用的数学思想？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/525978517/answer/2423023644">如果中考数学卷子上只有一道题，那最可能是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/521942995/answer/2394394348">为什么数学考试答题卡中的题图通常放在右侧？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/444709919/answer/2239041445">x的平方的数学期望怎么求？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/265179158/answer/1938226271">离散数学的自然推理系统，求教？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/280649457/answer/1936879025">求救离散数学等值演算题？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52126416/answer/1937768784">四大名著的英文名称？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26909942/answer/2776151198">怎样做好英语段落匹配题啊？每次都要花费20分钟实在是不行啊  希望得到知道，真心的求指教</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/267361527/answer/2762637161">英语作文介绍一个事物有什么常用句型？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/36609554/answer/2762557145">英语图画类作文开篇该怎么写，谢谢? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372278389/answer/2759637679">“最美逆行者”用英语怎么说更达意？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/26996788/answer/2507238099">英语四六级的信息匹配题怎么做？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/280581372/answer/2005693626">英语四六级翻译题有什么提分技巧？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/389068604/answer/1938332472">“柴米油盐酱醋茶”和“琴棋书画诗酒茶”怎么用英语翻译？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/301263826/answer/2925981688">六级考试的做题顺序有什么讲究？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/487751253/answer/2762653902">想要四六级作文万能句子，高大上一点的？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/305684638/answer/2761557474">四级作文有什么万能句型？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/353845323/answer/2447574546">请问大家四级考试最好的时间分配和做题顺序是？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/357467293/answer/2248969424">怎样才能在20天内过四级？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/571591761/answer/2797403752">可以给我推荐一首你喜欢的歌曲吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/422116193/answer/2681882838">请问你们最喜欢的歌手是谁？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/266749866/answer/1907104167">你最喜欢的歌手是谁？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/300865949/answer/2698630598">你见过最好看的橘猫长什么样？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/545007419/answer/2721913768">你家猫有哪些固定习惯，雷打不动的那种？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/420796027/answer/2798154059">养猫的人容易养成什么习惯？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/432072078/answer/2798350804">猫咪主人可以声索猫咪的肖像权吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/381953265/answer/2827579109">如何给猫上课？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/527655757/answer/2864747457">这俩猫猫表情包叫什么啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/273887080/answer/2879244777">养猫的人喜欢自己的猫被别人撸么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/367425093/answer/2909402662">对于养猫的家庭来说，最好的沙发是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24632687/answer/2532771835">为什么每次我一回家，我家猫就要特意去猫抓板磨一下爪子？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/300865949/answer/2698630598">你见过最好看的橘猫长什么样？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/545007419/answer/2721913768">你家猫有哪些固定习惯，雷打不动的那种？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/561947401/answer/2948819691">猫长得太壮是种什么体验？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/369351962/answer/2961008687">现实中见到的最好看的猫长什么样子? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/432072078/answer/2798350804">猫咪主人可以声索猫咪的肖像权吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/512228698/answer/2328856753">只学完了c++和数据结构能学计算机组成原理吗？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/426959888/answer/2210461693">计算机组成原理中，原码一位乘，乘数的第一行是什么用的？有他没他根本不影响运算啊？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/390692943/answer/2398842769">Python怎么根据三角形的边求该三角形的面积(注</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/428089006/answer/2411985506">如何最简单、通俗地理解Python的字符串？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/524308457/answer/2411999654">哪位大哥帮忙看一下这道Python题？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/392418566/answer/2422832943">请问python如何判断奇偶数？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/380378573/answer/2698574058">请问python如何编写1-1000的整数和，和奇数和啊！！谢谢</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/485997084/answer/2763864508">如何在 Python</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/505962124/answer/2945181809">普通话考试命题说话怎么说满三分钟？有模板吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/432568565/answer/2950374871">普通话考试朗读短文读错三个字，还有机会过二甲吗？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/349046590/answer/2948359994">普通话水平测试有哪些应试技巧？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/314447032/answer/2945032113">普通话考试最后一道题，大概要准备多少字才能说过三分钟。语速适中偏快一丢丢？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/266893603/answer/2326347095">数学建模美赛用latex写摘要页？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/318911537/answer/2931456213">数学建模的常规步骤是什么？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/62943097/answer/2361029338">如何从零开始，入门 LaTeX？</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/514199555/answer/2331400344">请问下列LaTeX排版怎么搞定？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/513011070/answer/2327948922">怎样画出高数课本上的的这些区间示意图？（MATLAB或latex）? </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/62760232/answer/2327464553">IEEE的论文的 LaTex</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52256305/answer/2326644568">怎样用LaTeX在正文中提及参考文献？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/456947232/answer/2326622026">LaTeX如何设置三线表的列宽？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/441315376/answer/2325549596">如何使用latex定制目录？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/268584589/answer/2325004701">LaTeX如何设计第5层乃至更深的列表环境？ </a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/394325093/answer/2321531165">windows上有哪些工具帮助Latex实现所见即所得？ </a> </p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '3V58dOCDuRBqTtu57aJPZdh8-gzGzoHsz',
+        appKey: 'GOzIkWKFm4CVoYNB6iqBLJxl',
+        serverURLs: 'https://3v58docd.lc-cn-n1-shared.com',
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'hide',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '想看您的评论'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/04/11/chenyixin/qi-ta/shu-xue-shi/gao-si/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-11
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            椰香软糖
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/04/05/chenyixin/qi-ta/zhi-hu/zhi-hu-hui-da/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            椰香软糖
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2854938398"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='false'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2023</span>
+            
+            <a href="/about" target="_blank">椰香软糖</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2023";
+                        var startMonth = "5";
+                        var startDate = "20";
+                        var startHour = "12";
+                        var startMinute = "29";
+                        var startSecond = "47";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已安全运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已安全運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已安全运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已安全運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <script language=JavaScript> document.write("|最后更新时间: " + document.lastModified + "") </script> <br/>
+
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/coconut-y" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3112949194" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3112949194" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/yz_null" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/yz_null" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
