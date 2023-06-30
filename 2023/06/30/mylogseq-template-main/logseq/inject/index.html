@@ -244,7 +244,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(5)</small>
+                <small>(8)</small>
             
         </div>
     </li>
@@ -256,7 +256,7 @@
         <div data-rel="REMINDER">
             
             REMINDER
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -284,7 +284,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="5">
+<input type="hidden" id="yelog_site_posts_number" value="8">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -355,39 +355,66 @@
         </a>
         
         
-        <a  class="全部文章 "
-           href="/2022/05/26/chenyixin/readme/"
-           data-tag=""
+        <a id="top" class="全部文章 REMINDER "
+           href="/2017/09/17/mylogseq-template-main/pages/yuan-wang-qing-dan/"
+           data-tag="愿望清单,withoutfire"
            data-author="" >
-            <span class="post-title" title=""></span>
-            <span class="post-date" title="2022-05-26 00:49:10">2022/05/26</span>
+            <span class="post-title" title="愿望清单">愿望清单</span>
+            <span class="post-date" title="2017-09-17 00:00:00">2017/09/17</span>
         </a>
         
         
         <a  class="全部文章 "
-           href="/2022/05/26/chenyixin/pages/init/"
+           href="/2023/06/30/mylogseq-template-main/pages/post-commit/"
            data-tag=""
            data-author="" >
             <span class="post-title" title=""></span>
-            <span class="post-date" title="2022-05-26 00:49:10">2022/05/26</span>
+            <span class="post-date" title="2023-06-30 18:06:18">2023/06/30</span>
         </a>
         
         
         <a  class="全部文章 "
-           href="/2022/05/26/chenyixin/pages/contents/"
+           href="/2023/06/30/mylogseq-template-main/pages/init/"
            data-tag=""
            data-author="" >
             <span class="post-title" title=""></span>
-            <span class="post-date" title="2022-05-26 00:49:10">2022/05/26</span>
+            <span class="post-date" title="2023-06-30 18:06:18">2023/06/30</span>
         </a>
         
         
         <a  class="全部文章 "
-           href="/2022/05/26/chenyixin/pages/post-commit/"
+           href="/2023/06/30/mylogseq-template-main/pages/contents/"
            data-tag=""
            data-author="" >
             <span class="post-title" title=""></span>
-            <span class="post-date" title="2022-05-26 00:49:10">2022/05/26</span>
+            <span class="post-date" title="2023-06-30 18:06:18">2023/06/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2023/06/30/mylogseq-template-main/logseq/inject/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2023-06-30 18:06:18">2023/06/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2023/06/30/mylogseq-template-main/logseq/custom/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2023-06-30 18:06:18">2023/06/30</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2023/06/30/mylogseq-template-main/readme/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2023-06-30 18:06:18">2023/06/30</span>
         </a>
         
         <div id="no-item-tips">
@@ -408,7 +435,7 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-chenyixin/pages/post-commit" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-MyLogseq-Template-main/logseq/inject" class="article article-type-post" itemscope itemprop="blogPost">
     
     <div class="article-meta">
         
@@ -418,7 +445,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-06-30 16:43:47'>2022-05-26 00:49</time>
+            发布时间 : <time class="date" title='最后更新: 2022-05-26 15:49:10'>2023-06-30 18:06</time>
         
     </div>
     <div class="article-meta">
@@ -456,9 +483,92 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#!&#x2F;bin&#x2F;sh</p>
-<p>git push origin main</p>
+        <!-- 评论系统放置在主内容区域 -->
+<script>
+    var container = document.getElementById('main-content-container');
+    container.style['flex-wrap'] = 'wrap';
+    container.firstChild.style['flex-basis'] = '100%';
+    var element = document.createElement('div');
+    element.classList.add('giscus');
+	container.appendChild(element);
+</script>
+<!-- 评论系统 -->
+<script src="https://giscus.app/client.js"
+        data-repo="fishyer/MyLogseq-Discussions"
+        data-repo-id="R_kgDOHTQ4JA"
+        data-category="General"
+        data-category-id="DIC_kwDOHTQ4JM4CO_qN"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+<!-- SPA 评论系统刷新问题 -->
+<script>
+    history.pushState = (f => function pushState() {
+        var ret = f.apply(this, arguments);
+        window.dispatchEvent(new Event('pushstate'));
+        window.dispatchEvent(new Event('locationchange'));
+        return ret;
+    })(history.pushState);
+    history.replaceState = (f => function replaceState() {
+        var ret = f.apply(this, arguments);
+        window.dispatchEvent(new Event('replacestate'));
+        window.dispatchEvent(new Event('locationchange'));
+        return ret;
+    })(history.replaceState);
+    window.addEventListener('popstate', () => {
+        window.dispatchEvent(new Event('locationchange'))
+    });
+    window.addEventListener('locationchange', function() {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        const title = decodeURIComponent(location.hash.split('/').slice(-1)[0]);
+        console.debug("location change to:", title, iframe);
+        if (!iframe || !title) return;
+        iframe.contentWindow.postMessage({
+            giscus: {
+                setConfig: {
+                    term: title
+                }
+            }
+        }, 'https://giscus.app');
+        console.debug("try refresh giscus:", title);
+    }, false);
+</script>
+<!-- 评论系统主题随logseq变化 -->
+<script>
+    localStorage.setItem = (f => function setItem() {
+        var ret = f.apply(this, arguments);
+        if (arguments.length > 1 && arguments[0] == 'theme') {
+            window.dispatchEvent(new Event('themechange'));
+        }
+        return ret;
+    })(localStorage.setItem);
 
+    window.addEventListener('themechange', () => {
+        const logseqTheme = JSON.parse(window.localStorage.getItem('theme'));
+        const lsq2gisThemeMap = {
+            'dark': 'dark_dimmed',
+            'white': 'light'
+        };
+        const giscusTheme = lsq2gisThemeMap[logseqTheme];
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (iframe && giscusTheme) {
+            iframe.contentWindow.postMessage({
+                giscus: {
+                    setConfig: {
+                        theme: giscusTheme
+                    }
+                }
+            }, 'https://giscus.app');
+            console.debug("try switch giscus theme:", giscusTheme);
+        }
+    });
+</script>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
